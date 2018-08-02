@@ -1,0 +1,83 @@
+.theme{
+font-family: Futura, sans-serif
+}
+
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none
+}
+
+a:hover{
+    text-decoration: underline
+}
+
+a:active{
+    text-decoration: underline
+}
+
+.header{
+top:0;
+left: 0;
+position: fixed;
+height: 40px;
+width: 100vw;
+background-color: #eeeeee
+}
+
+.middle{
+top: 40px;
+position: fixed
+}
+
+.footer{
+bottom: 0;
+left: 0;
+position: fixed;
+height: 40px;
+width: 100vw;
+background-color:#eee
+}
+
+.title{
+    text-align: center;
+    font: 85px Futura, sans-serif;
+    margin-top: 91px;
+    color: crimson;
+    
+}
+
+.title2{
+    text-align: center;
+    font: 85px Futura, sans-serif;
+    color: #433AC9;
+}
+
+
+.title3{
+    text-align: center;
+    font: 42.5px Futura, sans-serif;
+    color: #433AC9;
+}
+
+.bar{
+width: 81.9vw;
+height: inherit;
+}
+
+.start{
+
+}
+
+.end{
+    float: inherit;
+    margin-left: 81.9vw
+}
+
+.grad {
+    width: 100vw;
+    height: 110vh;
+    background: crimson; /* For browsers that do not support gradients */
+    background: repeating-linear-gradient(to bottom right, cyan, blue); /* Standard syntax (must be last) */
+}
