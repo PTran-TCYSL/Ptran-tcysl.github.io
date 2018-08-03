@@ -28,7 +28,7 @@ background-color: #eeeeee
 
 .middle{
 top: 40px;
-position: fixed
+position: absolute
 }
 
 .footer{
@@ -37,13 +37,13 @@ left: 0;
 position: fixed;
 height: 40px;
 width: 100vw;
-background-color:#eee
+background-color:#eeeeee
 }
 
 .title{
     text-align: center;
     font: 85px Futura, sans-serif;
-    margin-top: 91px;
+    
     color: crimson;
     
 }
@@ -63,7 +63,6 @@ background-color:#eee
 
 .bar{
 width: 81.9vw;
-height: inherit;
 }
 
 .start{
@@ -71,13 +70,33 @@ height: inherit;
 }
 
 .end{
-    float: inherit;
     margin-left: 81.9vw
 }
 
-.grad {
-    width: 100vw;
-    height: 110vh;
+#grad {
+    height: 200px;
     background: crimson; /* For browsers that do not support gradients */
-    background: repeating-linear-gradient(to bottom right, cyan, blue); /* Standard syntax (must be last) */
+    background: linear-gradient(to right, red , yellow, cyan, blue, magenta); /* Standard syntax (must be last) */
+}
+
+@keyframes animation{
+    from{color: #0000ff;}
+to{color: #00ff00;}
+}
+
+.animation{
+    width: 100vw;
+    height: 35vw;
+    background-color: crimson;
+    font-size: 2vw;
+    position: relative;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
 }
